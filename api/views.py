@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .models import Artista, Album, Musica
+from .models import User, Todo, Comment, Post
 from .serializers import UserSerializer, TodoSerializer, CommentSerializer, PostSerializer
 
 class UserViewSet(viewsets.ModelViewSet):
