@@ -22,9 +22,10 @@ from rest_framework import routers
 from api import views
 
 router = routers.DefaultRouter()
-router.register(r'artistas', views.ArtistaViewSet)
-router.register(r'albuns', views.AlbumViewSet)
-router.register(r'musicas', views.MusicaViewSet)
+router.register(r'user', views.ArtistaViewSet)
+router.register(r'todo', views.AlbumViewSet)
+router.register(r'comment', views.MusicaViewSet)
+router.register(r'post', views.MusicaViewSet)
 
 # Wire up our API using automatic URL routing.
 urlpatterns = [
